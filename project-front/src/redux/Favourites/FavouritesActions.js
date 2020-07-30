@@ -52,7 +52,7 @@ export const fetchFavs = (dataToSubmit) => {
     console.log(dataToSubmit)
     return (dispatch) => {
         dispatch(fetchFavsRequest())
-        axios.post('http://localhost:5000/api/favourites/getFavourites' , dataToSubmit)
+        axios.post('https://smoothie-recipes-app.herokuapp.com/api/favourites/getFavourites' , dataToSubmit)
         .then(response => {
             if(response.data.success){
             const favourites = response.data.favourites
@@ -70,7 +70,7 @@ export const uploadFavs = (dataToSubmit) => {
     console.log(dataToSubmit)
     return (dispatch) => {
         dispatch(uploadFavsRequest())
-        axios.post('http://localhost:5000/api/favourites/upload' , dataToSubmit)
+        axios.post('https://smoothie-recipes-app.herokuapp.com/api/favourites/upload' , dataToSubmit)
         .then(response => {
             if(response.data.success){
             dispatch(uploadFavsSuccess())

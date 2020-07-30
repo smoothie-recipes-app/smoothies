@@ -30,7 +30,7 @@ export const logoutUser = () => {
 const loginUser = (dataToSubmit) => {
     return (dispatch) => {
         dispatch(loginUserRequest())
-        axios.post('http://localhost:5000/api/user/login' , dataToSubmit)
+        axios.post('https://smoothie-recipes-app.herokuapp.com/api/user/login' , dataToSubmit)
         .then(response => {
             if(response.data.loginSuccess){
             const user = response.data.user

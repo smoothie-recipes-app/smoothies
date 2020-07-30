@@ -31,7 +31,7 @@ const registerUser = (dataToSubmit) => {
     return (dispatch) => {
         console.log('here inside')
         dispatch(registerUserRequest())
-        axios.post('http://localhost:5000/api/user/register' , dataToSubmit)
+        axios.post('https://smoothie-recipes-app.herokuapp.com/api/user/register' , dataToSubmit)
         .then(response => {
             console.log(response)
             if(response.data.registerSuccess){
