@@ -1,0 +1,9 @@
+.favourite-container{
+    /* z-index: 1; */
+    padding-top: 5vh;
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;  
+}

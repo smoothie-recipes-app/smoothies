@@ -1,0 +1,17 @@
+{
+  "name": "recipe-project",
+  "version": "1.0.0",
+  "description": "Complete Project",
+  "main": "index.js",
+  "scripts": {
+    "client": "npm start --prefix project-front",
+    "server": "npm start --prefix server",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Tom",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.2.0"
+  },
+  "devDependencies": {}
+}

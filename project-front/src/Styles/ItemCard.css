@@ -1,0 +1,9 @@
+
+.card-container{
+    transition: transform 0.3s ease;
+}
+.card-container:hover{
+    transform: rotate(-2deg);
+    transition-timing-function: ease-in;
+    cursor : pointer;
+}
